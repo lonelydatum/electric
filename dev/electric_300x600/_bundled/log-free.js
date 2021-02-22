@@ -10,9 +10,9 @@ var size = { w: banner.offsetWidth, h: banner.offsetHeight };
 TweenLite.defaultEase = Power2.easeInOut;
 
 var read = {
-	t1: 3.7,
-	t2: 1.6,
-	t3: 3.3
+	t1: 2.7,
+	t2: 1,
+	t3: 2.5
 };
 
 function start() {
@@ -32,6 +32,7 @@ function start() {
 
 	tl.to(".t3", .3, { opacity: 0 }, "+=" + read.t3);
 	tl.from(".t4", .5, { opacity: 0, y: "+=10" });
+	tl.from(".cta", .5, { opacity: 0 }, "+=.7");
 }
 
 exports.size = size;
